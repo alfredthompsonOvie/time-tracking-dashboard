@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<script src="js/app.js" defer></script>
+		<title>Frontend Mentor | Time tracking dashboard</title>
+	</head>
+	<body>
+		<div class="container">
+			<main class="dashboard">
+				<section class="card profileCard">
+					<div class="profile__details">
+						<img src="images/image-jeremy.png" alt="" class="profile__img" />
+						<div class="details">
+							<h4>Report for</h4>
+							<h1 class="heading">Jeremy Robson</h1>
+						</div>
+					</div>
+					<div class="tabContainer">
+						<button class="btn" data-time="daily">Daily</button>
+						<button class="btn" data-time="weekly">Weekly</button>
+						<button class="btn" data-time="monthly">Monthly</button>
+					</div>
+				</section>
+				<section class="activities">
+					<div class="card">
+						<div class="illustration work">
+							<img
+								src="images/icon-work.svg"
+								alt=""
+								class="illustration__img"
+							/>
+						</div>
+						<div class="card__contents">
+							<div class="content__header">
+								<h4 class="title">Work</h4>
+								<button class="btn ellipsis__btn">
+									<img src="images/icon-ellipsis.svg" alt="" />
+								</button>
+							</div>
+							<div class="card__timeframes">
+								<h1 class="current__time">32hrs</h1>
+								<p class="prev__timeframe">
+									<span class="prev__content">Last Week </span>
+									-
+									<span class="prev__time"> 36hrs</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="illustration play">
+							<img
+								src="images/icon-play.svg"
+								alt=""
+								class="illustration__img"
+							/>
+						</div>
+						<div class="card__contents">
+							<div class="content__header">
+								<h4 class="title">Play</h4>
+								<button class="btn ellipsis__btn">
+									<img src="images/icon-ellipsis.svg" alt="" />
+								</button>
+							</div>
+							<div class="card__timeframes">
+								<h1 class="current__time">10hrs</h1>
+								<p class="prev__timeframe">
+									<span class="prev__content">Last Week </span>
+									-
+									<span class="prev__time"> 8hrs</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="illustration study">
+							<img
+								src="images/icon-study.svg"
+								alt=""
+								class="illustration__img"
+							/>
+						</div>
+						<div class="card__contents">
+							<div class="content__header">
+								<h4 class="title">Study</h4>
+								<button class="btn ellipsis__btn">
+									<img src="images/icon-ellipsis.svg" alt="" />
+								</button>
+							</div>
+							<div class="card__timeframes">
+								<h1 class="current__time">4hrs</h1>
+								<p class="prev__timeframe">
+									<span class="prev__content">Last Week </span>
+									-
+									<span class="prev__time"> 7hrs</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="illustration exercise">
+							<img
+								src="images/icon-exercise.svg"
+								alt=""
+								class="illustration__img"
+							/>
+						</div>
+						<div class="card__contents">
+							<div class="content__header">
+								<h4 class="title">Exercise</h4>
+								<button class="btn ellipsis__btn">
+									<img src="images/icon-ellipsis.svg" alt="" />
+								</button>
+							</div>
+							<div class="card__timeframes">
+								<h1 class="current__time">4hrs</h1>
+								<p class="prev__timeframe">
+									<span class="prev__content">Last Week </span>
+									-
+									<span class="prev__time"> 5hrs</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="illustration social">
+							<img
+								src="images/icon-social.svg"
+								alt=""
+								class="illustration__img"
+							/>
+						</div>
+						<div class="card__contents">
+							<div class="content__header">
+								<h4 class="title">Social</h4>
+								<button class="btn ellipsis__btn">
+									<img src="images/icon-ellipsis.svg" alt="" />
+								</button>
+							</div>
+							<div class="card__timeframes">
+								<h1 class="current__time">5hrs</h1>
+								<p class="prev__timeframe">
+									<span class="prev__content">Last Week </span>
+									-
+									<span class="prev__time"> 10hrs</span>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="illustration self-care">
+							<img
+								src="images/icon-self-care.svg"
+								alt=""
+								class="illustration__img"
+							/>
+						</div>
+						<div class="card__contents">
+							<div class="content__header">
+								<h4 class="title">Self Care</h4>
+								<button class="btn ellipsis__btn">
+									<img src="images/icon-ellipsis.svg" alt="" />
+								</button>
+							</div>
+							<div class="card__timeframes">
+								<h1 class="current__time">2hrs</h1>
+								<p class="prev__timeframe">
+									<span class="prev__content">Last Week </span>
+									-
+									<span class="prev__time"> 2hrs</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#"> Alfred Thompson Ovie</a>.
+			</footer>
+		</div>
+	</body>
+</html>
