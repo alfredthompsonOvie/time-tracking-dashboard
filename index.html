@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link
@@ -12,10 +13,19 @@
 		/>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+		<style>
+			.js{
+				visibility: hidden;
+			}
+		</style>
 		<link rel="stylesheet" href="css/styles.css" />
 
+		<script>
+			document.getElementsByTagName('html')[0].classList.add('js');
+		</script>
+		<script src="js/gsap.min.js"></script>
 		<script src="js/app.js" defer></script>
 		<title>Frontend Mentor | Time tracking dashboard</title>
 	</head>
@@ -24,10 +34,10 @@
 			<main class="dashboard">
 				<section class="card profileCard">
 					<div class="profile__details">
-						<img src="images/image-jeremy.png" alt="" class="profile__img" />
+						<img src="images/image-jeremy.png" alt="" class="profile__img avatar" />
 						<div class="details">
 							<h4>Report for</h4>
-							<h1 class="heading">Jeremy Robson</h1>
+							<h1 class="heading"><span>Jeremy</span> <span>Robson</span> </h1>
 						</div>
 					</div>
 					<div class="tabContainer">
@@ -37,7 +47,7 @@
 					</div>
 				</section>
 				<section class="activities">
-					<div class="card">
+					<div class="card js-card">
 						<div class="illustration work">
 							<img
 								src="images/icon-work.svg"
@@ -63,7 +73,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card js-card">
 						<div class="illustration play">
 							<img
 								src="images/icon-play.svg"
@@ -89,7 +99,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card js-card">
 						<div class="illustration study">
 							<img
 								src="images/icon-study.svg"
@@ -115,7 +125,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card js-card">
 						<div class="illustration exercise">
 							<img
 								src="images/icon-exercise.svg"
@@ -141,7 +151,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card js-card">
 						<div class="illustration social">
 							<img
 								src="images/icon-social.svg"
@@ -167,7 +177,7 @@
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card js-card">
 						<div class="illustration self-care">
 							<img
 								src="images/icon-self-care.svg"
@@ -202,5 +212,10 @@
 				>. Coded by <a href="#"> Alfred Thompson Ovie</a>.
 			</footer>
 		</div>
+		<script>
+			window.onload = ()=>{
+				document.getElementsByTagName('html')[0].classList.remove('js');
+			}
+		</script>
 	</body>
 </html>

@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [time tracking dashboard](https://github.com/alfredthompsonOvie/time-tracking-dashboard)
-- Live Site URL: [time tracking dashboard](https://eivo-time-tracking-dashboard.netlify.app/)
+- Solution URL: [repo link](https://github.com/alfredthompsonOvie/time-tracking-dashboard)
+- Live Site URL: [visit live site](https://eivo-time-tracking-dashboard.netlify.app/)
 
 ## My process
 
@@ -42,14 +42,15 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Fetch API
 
 
 ### Continued development
 
-In the futute I would love to rebuid this project using vue.js. 
+In the future I would love to rebuid this project using vue.js. 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/alfredthompsonOvie)
-- Twitter - [@yourusername](https://www.twitter.com/Eivo_official)
+- Frontend Mentor - [@alfredthompsonOvie](https://www.frontendmentor.io/profile/alfredthompsonOvie)
+- Twitter - [@Eivo_official](https://www.twitter.com/Eivo_official)
 

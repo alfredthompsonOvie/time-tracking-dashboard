@@ -1,13 +1,13 @@
 "use strict";
 const tabContainer = document.querySelector(".tabContainer");
 const activities = document.querySelector(".activities");
-// const currentHrs = document.querySelector(".current__time");
 const btnz = document.querySelectorAll(".btn");
 let currentHrsz = document.querySelectorAll(".current__time");
 let prevContentz = document.querySelectorAll(".prev__content");
 let prevTime = document.querySelectorAll(".prev__time");
 
-btnz[1].classList.add("active");
+function init() {
+	btnz[1].classList.add("active");
 
 async function getData(time) {
 	try {
@@ -62,3 +62,43 @@ function renderTimeframes(time, data) {
 		});
 	}
 }
+
+const tl = gsap.timeline();
+
+tl
+	.from(".profileCard", {
+		x: 50,
+		autoAlpha: 0,
+		duration: 1
+	})
+	.from(".avatar", {
+		scale: 2,
+		autoAlpha: 0,
+		stagger: 0.3
+	})
+	.from(".details h4", {
+		x: 20,
+		autoAlpha: 0,
+		stagger: 0.3
+	}, "+=.1")
+	.from(".heading span", {
+		y: 20,
+		autoAlpha: 0,
+		stagger: 0.3
+	}, "<")
+	.from(".tabContainer .btn", {
+		scale: 2,
+		autoAlpha: 0,
+		stagger: 0.3
+	})
+	.from(".js-card", {
+		y: 20,
+		autoAlpha: 0,
+		stagger: 0.3
+	})
+	.from(".attribution", {
+		autoAlpha: 0,
+	})
+};
+
+document.addEventListener("DOMContentLoaded", init);
